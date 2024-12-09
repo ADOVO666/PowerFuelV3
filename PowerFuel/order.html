@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказать на дом - PowerFuel</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+         <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="PowerFuel Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">На главную</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Оформление заказа</h2>
+            <form class="form-style" id="orderForm" novalidate>
+                <label for="orderEmail">E-mail</label>
+                <input type="email" id="orderEmail" name="orderEmail" required>
+                <div id="orderEmailError"></div>
+            
+                <label for="orderAddress">Адрес (Г. Город Ул. Улица Д. Дом, Кв. Квартира)</label>
+                <input type="text" id="orderAddress" name="orderAddress" required>
+                <div id="orderAddressError" ></div>
+        
+                <label for="orderFlavor">Выбор вкуса</label>
+                <select id="orderFlavor" name="orderFlavor" required>
+                    <option value="">Выберите вкус</option>
+                    <option value="blackberry">Ежевика (12 шт. 1200 руб.)</option>
+                    <option value="pineapple">Ананас (12 шт. 1500 руб.)</option>
+                    <option value="original">Оригинальный (12 шт. 1200 руб.)</option>
+                    <option value="passionfruit">Маракуйя (12 шт. 1300 руб.)</option>
+                    <option value="strawberry">Клубника (12 шт. 1200 руб.)</option>
+                    <option value="kiwi">Киви (12 шт. 1200 руб.)</option>
+                </select>
+                <div id="orderFlavorError"></div>
+            
+                <div class="checkbox-group">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Подписаться на рассылку новостей компании</label>
+                </div>
+            
+                <button type="submit">Оплатить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 PowerFuel Energy Drink</p>
+    </footer>
+    
+<script src="validation2.js"></script>
+</body>
+</html>

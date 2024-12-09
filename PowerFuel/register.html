@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - PowerFuel Energy Drink</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="PowerFuel Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">На главную</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Форма регистрации</h2>
+            <form id="registerForm" class="form-style" novalidate>
+                <label for="username">Логин</label>
+                <input type="text" id="username" name="username" required>
+                <div id="usernameError"></div>
+            
+                <label for="email">E-mail</label>
+                <input id="email" name="email" required>
+                <div id="emailError"></div>
+            
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" required>
+                <div id="passwordError"></div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Подписаться на рассылку новостей компании</label>
+                </div>
+            
+
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 PowerFuel Energy Drink</p>
+    </footer>
+
+    <script src="validation1.js"></script>
+
+</body>
+</html>
